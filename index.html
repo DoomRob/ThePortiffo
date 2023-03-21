@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="CSS/style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1 style="font: size 10vw;">My Website</h1>
+            <ul class=" navigation" id="myNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HTML/map.html">Map</a></li>
+                <li><a href="HTML/gallery.html">Gallery</a></li>
+                <li><a href="HTML/XML.html">XMLHttpRequest</a></li>
+                <li><a href="HTML/contact-form.html">Contact Form</a></li>
+                <li><a href="HTML/animations.html">Animations</a></li>
+                <li><a href="HTML/storage.html">Local Storage & Web Workers</a></li>
+                <li><a href="HTML/serviceworker.html">Service Worker</a></li>
+                <li><a href="HTML/websockets.html">Web Sockets</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+            </ul> 
+    </header>
+    <main>
+        <article>
+            <p>Hello my name is Robert Gannon and I am a aspring software enigneer, I created this website to demonsate my skills.</p>
+            <p>Try out this feature below the Food Map</p>
+            <p>In the Food Maps find the following: Sausage, Peppers, Bananas</p>
+            <p>Click the button inside the box</p>
+            <img src="images/food.jpg" alt="Food" usemap="#foodmap" style="width:100%">
+            <map name="foodmap">
+                <area shape="rect" coords="133,89,1,194" alt="Peppers" href="https://en.wikipedia.org/wiki/Bell_pepper">
+                <area shape="circle" coords="296,314,51" alt="Sausage" href="https://en.wikipedia.org/wiki/Sausage">
+                <area shape="rect" coords="470,1,545,65" alt="Bananas" href="https://en.wikipedia.org/wiki/Banana">
+            </map>
+        </article>
+        <iframe
+                width=100% height="450" 
+                src="https://www.youtube.com/embed/J36rBqkeBos" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+        </iframe>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "navigation") {
+        x.className += " responsive";
+        } else {
+         x.className = "navigation";
+        }
+    }
+    </script>
+    </main>
+</body>
+</html>

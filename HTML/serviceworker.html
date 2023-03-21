@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet"  href="../CSS/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Storage & Webworker</title>
+</head>
+<style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h3 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 197px;
+  background: url(../images/knight-artorias.jpg) no-repeat center;
+}
+
+section {
+  max-width: 640px;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  box-shadow: 2px 2px 1px black;
+}
+
+caption {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 70%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 5px;
+  background: #ccc;
+  box-shadow: 1px 1px 1px black;
+}
+</style>
+<body>
+    <header>
+        <h1>My Website</h1>
+            <ul class="navigation" id="myNav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="XML.html">XMLHttpRequest</a></li>
+                <li><a href="contact-form.html">Contact Form</a></li>
+                <li><a href="animations.html">Animations</a></li>
+                <li><a href="storage.html">Local Storage & Web Workers</a></li>
+                <li><a href="serviceworker.html">Service Worker</a></li>
+                <li><a href="websockets.html">Web Sockets</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+            </ul> 
+    </header>
+
+    <h2>Service Worker</h2>
+
+    <h3></h3>
+
+    <section></section>
+
+    <script type="module" src="../JavaScript/app.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "navigation") {
+        x.className += " responsive";
+        } else {
+         x.className = "navigation";
+        }
+    }
+    </script>
+</body>
+</html>

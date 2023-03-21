@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <ul class="navigation" id="myNav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="XML.html">XMLHttpRequest</a></li>
+            <li><a href="contact-form.html">Contact Form</a></li>
+            <li><a href="animations.html">Animations</a></li>
+            <li><a href="storage.html">Local Storage & Web Workers</a></li>
+            <li><a href="serviceworker.html">Service Manager</a></li>
+            <li><a href="websockets.html">Web Sockets</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+    </header>
+    <h2>Contact Form</h2>
+    <main>
+        <form class="myForm" action="">
+
+            <div class="form-control">
+              <label for="fullName">Name</label> 
+              <input required id="fullName" type="text" name="full-name"/>
+              <div class="field-error"></div>
+            </div>
+    
+            <div class="form-control"> 
+             <label for="emailAddress">Email</label> 
+             <input required id="emailAddress" type="email" name="email-address"/>
+            <div class="field-error"></div>
+            </div>
+    
+            <div class="form-control"> 
+             <label for="message">Message</label>
+             <textarea id="message" name="message"></textarea>
+            </div>
+    
+            <input type="Submit" Value="Send" /> 
+    
+        </form>
+    </main>
+    
+    <script src ="../JavaScript/form.js"></script>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "navigation") {
+        x.className += " responsive";
+        } else {
+         x.className = "navigation";
+        }
+    }
+    </script>
+</body>
+</html>

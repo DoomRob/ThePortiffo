@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../CSS/animations.css"> 
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Animations</title>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <ul class="navigation" class="page-container" id="myNav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="XML.html">XMLHttpRequest</a></li>
+            <li><a href="contact-form.html">Contact Form</a></li>
+            <li><a href="animations.html">Animations</a></li>
+            <li><a href="storage.html">Local Storage & Web Workers</a></li>
+            <li><a href="serviceworker.html">Service Manager</a></li>
+            <li><a href="websockets.html">Web Sockets</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+        </ul> 
+    </header>
+
+    <h2>Animations & Transitions</h2>
+
+        <main>
+            <section class="transition-links">
+                <a href="https://www.w3schools.com/css/css3_transitions.asp">Click to see more!</a>
+            </section>
+
+            <section class="transition-classes">
+                <p>
+                    <button class="trigger">Change the target</button>
+                </p>
+                <div class="button">A Box</div>
+            </section>
+
+            <section>
+                <div class="animation"></div>
+            </section>
+        </main>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "navigation") {
+        x.className += " responsive";
+        } else {
+         x.className = "navigation";
+        }
+    }
+    
+        const trigger = document.querySelector('.trigger');
+        const button = document.querySelector('.button');
+
+        trigger.addEventListener('click', changeButton);
+
+        function changeButton() {
+            button.classList.toggle('active-button');
+        }
+    </script>
+</body>
+</html>

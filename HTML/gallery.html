@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1> <!--Navigation Menu-->
+        <ul class="navigation" id="myNav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="XML.html">XMLHttpRequest</a></li>
+            <li><a href="contact-form.html">Contact Form</a></li>
+            <li><a href="animations.html">Animations</a></li>
+            <li><a href="storage.html">Local Storage & Web Workers</a></li>
+            <li><a href="serviceworker.html">Service Manager</a></li>
+            <li><a href="websockets.html">Web Sockets</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+        </ul> 
+    </header>
+    <main>
+        <h2>Gallery</h2>
+        <div class="row"> <!--Rows for visual effects for images-->
+            <div class="column">
+                <p><img src="../images/pic-1.jpg" alt ="Florida" width ="300" height="300"></p>
+                <h2>Florida</h2>
+            </div>
+            <div class="column">
+                <p><img src="../images/pic-2.jpg" alt ="Dublin" class="w3-grayscale-max" width="300" height="300"></p>
+                <h2>Dublin</h2>
+            </div>
+            <div class="column">
+                <p><img src="../images/pic-3.jpg" alt ="New York" class="w3-hover-opacity" width="300" height="300"></p>
+                <h2>New York</h2>
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="column">
+                <p><img src="../images/pic-4.jpg" alt ="Tokyo" class="w3-grayscale" width="300" height="300"></p>
+                <h2>Tokyo</h2>
+            </div>
+            <div class="column">
+                <p><img src="../images/pic-5.webp" alt="London" class="w3-animate-fading" width="300" height="300"></p>
+                <h2>London</h2>
+            </div>
+            <div class="column">
+                <p><img src="../images/pic-6.jpg" alt="Madrid" class="w3-grayscale-min" width="300" height="300"></p>
+                <h2>Madrid</h2>
+            </div>
+        </div>
+    
+        <div class="w3-panel w3-blue w3-grayscale"> <!--Grayscale boxes-->
+            <h3>Five Facts about Florida</h3>
+            <p>It is one of the most visited places in the world</p>
+            <p>Florida produces 70% of America's oranges</p>
+            <p>Florida's Population is over 21 million</p>
+            <p>Florida has the longest coastlines in the United States</p>
+            <p>58 Million people visit Walt Dinsey Resort every year</p>
+        </div>
+        <div class="w3-panel w3-green w3-grayscale">
+            <h3>Five facts about Dublin</h3>
+            <p>The name Dublin comes from an old Irish Celtic name meaning "Black Pool"</p>
+            <p>Dublin is home to the wildest street in Europe</p>
+            <p>Trinity College boasts many famous graduates such as Oscar Wilde, Jonathan Swift, Bram Stoker and Jack Gleeson</p>
+            <p>Dublin is Europe's Silcon Valley</p>
+            <p>Gaelic football and hurling are the most popular sports in Dublin</p>
+        </div>
+        <div class="w3-panel w3-gray w3-grayscale">
+            <h3>Five Facts about New York</h3>
+            <p>A little over 8 million people live in New York City</p>
+            <p>The United Nations was established in New York in 1952 after World War II</p>
+            <p>The New York Libary has over 50 million books and other items and is the second largest library system in the nation after the Library of Congress. It is also the 3rd largest library in the world.</p>
+            <p>Times Square is named after the New York Times. It was originally called Longacre Square until the Times moved there in 1904.</p>
+            <p>New York City became the first capital of the United States in 1789.</p>
+        </div>
+        <div class ="w3-panel w3-white w3-grayscale">
+            <h3>Five Facts about Tokyo</h3>
+            <p>Tokyo is the world's most populous metropolitan area</p>
+            <p>Tokyo was originally named Edo</p>
+            <p>Tokyo first held the Olympics in 1964</p>
+            <p>Shinjuku Station is the busiest train station in the world</p>
+            <p>Tokyo Tower is one of the city's most famous landmarks</p>
+        </div>
+        <div class="w3-panel w3-red w3-grayscale">
+            <h3>Five Facts about London</h3>
+            <p>London is the smallest city in England</p>
+            <p>…and it’s technically a forest</p>
+            <p>Over half of the London Underground runs above ground</p>
+            <p>‘Big Ben’ isn’t actually called Big Ben</p>
+            <p>Most Londoners don’t live in London</p>
+        </div>
+        <div class="w3-panel w3-yellow w3-grayscale">
+            <h3>Five Facts about Madrid</h3>
+            <p>Madrid was created around the year of 860 A.C</p>
+            <p>According to FIFA, Real Madrid FC is the world’s most successful football club of the 20th Century</p>
+            <p>It has been the capital of Spain since the 17th century</p>
+            <p>Madrid is one of the greenest cities in Europe</p>
+            <p>Madrid is the third largest city in the EU, after London and Berlin</p>
+        </div>
+    </main>
+    <script src="../JavaScript/main.js"></script>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "navigation") {
+        x.className += " responsive";
+        } else {
+         x.className = "navigation";
+        }
+    }
+    </script>
+</body>
+</html>

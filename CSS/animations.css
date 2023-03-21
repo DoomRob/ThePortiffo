@@ -1,0 +1,63 @@
+/* Used for the CSS Animations*/
+.transition-links,
+.transition-classes {
+    border: 1px solid #cc0505;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transition-classes {
+    flex-direction: column;
+}
+a {
+    padding: 3em;
+    text-decoration: none;
+    color: #000;
+    border-radius: 8px;
+    transition: background-color 2s ease-in-out, color 2s ease;
+}
+/* Style for the link when hovered */
+a:hover {
+    background-color: #D65600;
+    color: #deba097a;
+}
+/* 2. Transitioning triggered by JavaScript */
+.button {
+    padding: 3em;
+    color: #01f92a9c;
+    border-radius: 16px;
+    font-size: 2em;
+    background-color: #18711b;
+}
+.active-button {
+    font-size: 3em;
+    background-color: #2dd232;
+    transition-delay: 2s;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 119, 0);
+    transition: width 2s, height 4s;
+    transition-delay: 1s;
+}
+div.animation {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: first;
+    animation-delay: -2;
+    animation: first 4s linear 2s infinite alternate;
+}
+@keyframes first {
+    0%   {background-color:rgb(47, 0, 255); left:0px; top:0px;}
+    25%  {background-color:rgb(183, 0, 255); left:600px; top:0px;}
+    50%  {background-color:red; left:200px; top:200px;}
+    75%  {background-color:orangered; left:0px; top:200px;}
+    100% {background-color:yellow; left:0px; top:0px;}
+  }
+

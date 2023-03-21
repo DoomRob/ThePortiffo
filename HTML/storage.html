@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Local Storage & Web Workers</title>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+            <ul class="navigation" id="myNav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="XML.html">XMLHttpRequest</a></li>
+                <li><a href="contact-form.html">Contact Form</a></li>
+                <li><a href="animations.html">Animations</a></li>
+                <li><a href="storage.html">Local Storage & Web Workers</a></li>
+                <li><a href="serviceworker.html">Service Manager</a></li>
+                <li><a href="websockets.html">Web Sockets</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+            </ul> 
+    </header>
+
+    <h2>Local Storage & Web Workers</h2>
+
+            <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+            <div id="result"></div>
+            <p>Click the button</p>
+            <p>One click will go up by one</p>
+
+            <p>Count numbers: <output id="result1"></output></p>
+            <button onclick="startWorker()">Start Worker</button> 
+            <button onclick="stopWorker()">Stop Worker</button>
+
+        <script>
+            //Navigation menu
+            function myFunction() {
+                var x = document.getElementById("myNav");
+                if (x.className === "navigation") {
+                x.className += " responsive";
+                } else {
+                 x.className = "navigation";
+                }
+            }
+            //Click Counter
+            function clickCounter() {
+                if (typeof(Storage) !== "undefined") {
+                    if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount)+1;
+                    } else {
+                    localStorage.clickcount = 1;
+                    }
+                    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+                    } else {
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                }
+            }
+    
+            //Web Worker
+            var w;
+
+            function startWorker() {
+            if(typeof(Worker) !== "undefined") {
+            if(typeof(w) == "undefined") {
+                w = new Worker("../JavaScript/demo-worker.js");
+            }
+            w.onmessage = function(event) {
+                document.getElementById("result1").innerHTML = event.data;
+            };
+            } else {
+                document.getElementById("result1").innerHTML = "Sorry, your browser does not support Web Workers...";
+            }
+            }
+            function stopWorker() { 
+            w.terminate();
+                w = undefined;
+            }
+        </script>
+        <script src="../JavaScript/demo-worker.js"></script>
+</body>
+</html>
