@@ -37,30 +37,6 @@ ul {
     background-color: grey;
     display: flex;
 }
-ol {
-    list-style-type: upper-roman;
-}
-em {
-    font-style: normal;
-    font-weight: bold;
-}
-.highlight {
-    color: #0025f9;
-}
-.introduction {
-    font-size: 1.5em;
-    color: #04afe8;
-    font-style: italic;
-}
-a:link {
-    color: #00b1c8;
-}
-a:visited {
-    color: #0c92ec;
-}
-a:hover {
-    color: #06d4f4;
-}
 .navigation {
     list-style-type: none;
     margin: 0;
