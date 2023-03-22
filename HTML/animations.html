@@ -12,7 +12,7 @@
 <body>
     <header>
         <h1>My Website</h1>
-        <ul class="navigation" class="page-container" id="myNav">
+        <ul class="navigation" class="page-container">
             <li><a href="../index.html">Home</a></li>
             <li><a href="map.html">Map</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -45,15 +45,7 @@
             </section>
         </main>
     <script>
-        function myFunction() {
-        var x = document.getElementById("myNav");
-        if (x.className === "navigation") {
-        x.className += " responsive";
-        } else {
-         x.className = "navigation";
-        }
-    }
-    
+        // This used for the transition-classes    
         const trigger = document.querySelector('.trigger');
         const button = document.querySelector('.button');
 
