@@ -13,7 +13,7 @@
 <body>
     <header>
         <h1>My Website</h1>
-        <ul class="navigation" id="myNav">
+        <ul class="navigation">
             <li><a href="../index.html">Home</a></li>
             <li><a href="map.html">Map</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -23,7 +23,6 @@
             <li><a href="storage.html">Local Storage & Web Workers</a></li>
             <li><a href="serviceworker.html">Service Manager</a></li>
             <li><a href="../chat/index.html">Web Sockets</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
         </ul> 
     </header>
     
@@ -36,17 +35,6 @@
     <br>
     <canvas id="canvas" width="1500" height="400" style="border: 5px solid yellow"></canvas>
 
-
     <script src="../JavaScript/maps.js"></script>
-    <script>
-        function myFunction() {
-        var x = document.getElementById("myNav");
-        if (x.className === "navigation") {
-        x.className += " responsive";
-        } else {
-         x.className = "navigation";
-        }
-    }
-    </script>
 </body>
 </html>
