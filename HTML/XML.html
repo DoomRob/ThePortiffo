@@ -20,7 +20,7 @@
 <body>
     <header>
         <h1>My Website</h1>
-            <ul class="navigation">
+            <ul class="navigation"> <!--Navigation Menu-->
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="map.html">Map</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -35,7 +35,7 @@
 
     <h2>Musicians that I listen to</h2>
 
-        <button type="button" onclick="loadDoc()">Show</button>
+        <button type="button" onclick="loadDoc()">Show</button> <!--This button shows the XML list-->
         <br><br>
         <table id="demo"></table>       
 
@@ -52,7 +52,7 @@
             }
         });
     }
-
+        // The table of the Artists that I listen to
         function myFunction(xml) {
         var table="<tr><th>Artist</th><th>Genre</th><th>Begin</th><th>Country</th><th>Albums</th></tr>";
         $(xml).find("LISTEN").each(function(){
