@@ -2,7 +2,7 @@ In all the webpages there is a navigation menu that will send you to the followi
 
 // Index
 The index page has a article that has a blue background that has an introduction about myself 
-and a image map you can interact to find the following 'Bananas', 'Peppers' and 'Sausage'.
+and a image map you can interact to find the 'Salmon'.
 There is a video on the right side of the screen.
 
 // Map
